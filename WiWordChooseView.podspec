@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint PodName.podspec' to ensure this is a
+#  Be sure to run `pod spec lint WiWordChooseView.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "A word choose view, good luck!"
+  s.description  = "A word choose view. Can tips user choose done. whaterve!"
 
   s.homepage     = "https://github.com/Wi/WiWordChooseViewDemo"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  # s.license      = "Wi"
+  # s.license      = "MIT (example)"
     s.license      = { :type => "Wi", :file => "LICENSE" }
 
 
@@ -60,10 +60,9 @@ Pod::Spec.new do |s|
   #
   #  If this Pod runs only on iOS or OS X, then specify the platform and
   #  the deployment target. You can optionally include the target after the platform.
-  #
 
-   s.platform     = :ios
-   s.platform     = :ios, "7.0"
+     s.platform     = :ios
+     s.platform     = :ios, "7.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -89,7 +88,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "WiWordChooseViewDemo/WiWordChooseView", "WiWordChooseViewDemo/WiWordChooseView/*.{h,m}"
+  s.source_files  = "WiWordChooseViewDemo/WiWordChooseView", "WiWordChooseViewDemo/WiWordChooseView/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -115,7 +114,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "UIKit"
+    s.framework  = "UIKit"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
