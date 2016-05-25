@@ -3,7 +3,6 @@
 
 使用示例：
 
-#import "ViewController.h"
 #import "WiWordChooseView.h"
 
 @interface ViewController ()
@@ -19,9 +18,11 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     // set word
+
     [self.wordChooseView setWord:@"窈窕淑女君子好逑"];
     
     // set block
+    
     [self.wordChooseView setCallBackBlock:^(BOOL isSuccess){
         if (isSuccess)
         {
