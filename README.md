@@ -7,7 +7,9 @@ pod 'WiWordChooseView', '~> 1.0.0'
 使用示例：
 
 WiWordChooseView *aView = [[WiWordChooseView alloc] initWithFrame:self.view.bounds
+
                                                                  word:@"窈窕淑女君子好逑"
+                                                                 
                                                              callBack:^(BOOL isSuccess) {
                                                              
         if (isSuccess)
