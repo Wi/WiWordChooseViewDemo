@@ -2,7 +2,9 @@
 一个选择的demo
 
 Cocoapods支持：
-pod 'WiWordChooseView', '~> 1.0.0'
+
+pod 'WiWordChooseView', '~> 1.0.2'
+
 
 使用示例：
 
