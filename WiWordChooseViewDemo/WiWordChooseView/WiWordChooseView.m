@@ -144,6 +144,9 @@
         btn.layer.borderWidth = 1.0f;
         btn.layer.borderColor = [UIColor lightGrayColor].CGColor;
         btn.tag = x;
+        NSRange range = NSMakeRange(x, 1);
+        NSString *str = [self.word substringWithRange:range];
+        [btn setTitle:str forState:UIControlStateHighlighted];
         [btn addTarget:self action:@selector(tmpBtnsAction:) forControlEvents:UIControlEventTouchUpInside];
         [self.upBgView addSubview:btn];
     }
@@ -273,11 +276,7 @@
 // 空按钮事件 - 高亮状态提示用户
 - (void)tmpBtnsAction:(UIButton *)btn
 {
-    NSInteger tag = btn.tag;
-    NSRange range = NSMakeRange(tag, 1);
-    NSString *str = [self.word substringWithRange:range];
-    
-    [btn setTitle:str forState:UIControlStateHighlighted];
+    //
 }
 
 
